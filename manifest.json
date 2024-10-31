@@ -1,0 +1,23 @@
+{
+    "manifest_version": 2,
+    "name": "Third-Party Connection Detector",
+    "version": "1.0",
+    "permissions": [
+      "webRequest",
+      "webRequestBlocking",
+      "storage",
+      "activeTab",
+      "<all_urls>"
+    ],
+    "background": {
+      "scripts": ["background.js"]
+    },
+    "browser_action": {
+      "default_popup": "popup.html",
+      "default_icon": "icon.png"
+    },
+    "icons": {
+      "48": "icon.png"
+    }
+  }
+  
