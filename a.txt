@@ -1,0 +1,12 @@
+"doubleclick.net",
+    "google-analytics.com",
+    "ads.yahoo.com",
+    "adservice.google.com",
+    "facebook.com",
+    "scorecardresearch.com",
+    "fonts.googleapis.com",
+    "fonts.gstatic.com",
+    "accounts.google.com",
+    "www.google.com",
+    "www.google.com.br",
+    "play.google.com"
