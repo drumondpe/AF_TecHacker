@@ -3,15 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <title>Third-Party and Tracker Blocker</title>
+  <link rel="stylesheet" href="popup.css">
 </head>
 <body>
+  <h2>Configurações de Bloqueio</h2>
+  <label for="toggleBlocking">Bloqueio de Rastreadores:</label>
+  <input type="checkbox" id="toggleBlocking">
+
   <h2>Domínios de Terceiros Detectados</h2>
   <ul id="domainList"></ul>
   
   <h2>Rastreadores Bloqueados</h2>
   <ul id="trackerList"></ul>
   
+  <h3>Gerenciar Lista de Rastreadores Personalizados</h3>
+  <input type="text" id="customDomain" placeholder="Adicionar domínio de rastreamento">
+  <button id="addCustomDomain">Adicionar</button>
+  <button id="removeCustomDomain">Remover</button>
+
+  <h3>Lista de Rastreadores Personalizados</h3>
+  <ul id="customTrackerList"></ul> <!-- Exibe a lista de rastreadores personalizados -->
+
+  <p id="statusMessage"></p> <!-- Elemento para mensagens de status -->
+
   <button id="clearButton">Limpar Histórico</button>
+  
   <script src="popup.js"></script>
 </body>
 </html>
