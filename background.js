@@ -18,6 +18,17 @@ let blockedTrackers = new Set();
 let customTrackerDomains = new Set();
 let isBlockingEnabled = true;
 
+// Carrega domínios da EasyList do arquivo easylist.txt e adiciona ao trackerDomains
+fetch(browser.runtime.getURL("easylist.txt"))
+  .then(response => response.text())
+  .then(text => {
+    const easyListDomains = text.split("\n").map(line => line.trim()).filter(line => line && !line.startsWith("!"));
+    trackerDomains = trackerDomains.concat(easyListDomains);
+    console.log("EasyList carregada:", trackerDomains); // Log para confirmar o carregamento
+  })
+  .catch(error => console.error("Erro ao carregar a EasyList:", error));
+
+// Carrega configurações salvas de customTrackerDomains e isBlockingEnabled
 browser.storage.local.get(["customTrackerDomains", "isBlockingEnabled"]).then((result) => {
   customTrackerDomains = new Set(result.customTrackerDomains || []);
   isBlockingEnabled = result.isBlockingEnabled !== false;
