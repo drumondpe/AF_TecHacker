@@ -2,7 +2,7 @@
 
 Este plugin para o navegador Firefox foi desenvolvido para identificar e bloquear rastreadores na web, utilizando uma lista de domínios de rastreamento conhecida (EasyList) e permitindo ao usuário gerenciar uma lista personalizada de domínios para bloqueio. O plugin também fornece uma interface simples para gerenciar o bloqueio de rastreadores, ativar/desativar a funcionalidade, e visualizar relatórios básicos de rastreadores detectados e bloqueados.
 
-### Funcionalidades
+# Funcionalidades
 ## Conceito C (Nota C)
 
 - Identificação Básica de Rastreadores: A extensão utiliza uma lista conhecida de rastreadores (EasyList) para identificar domínios de rastreamento. Cada requisição feita pelo navegador é comparada com a lista para verificar se é um domínio de rastreamento.
